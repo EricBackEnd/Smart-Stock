@@ -61,7 +61,7 @@ O Smart-Stock adota uma **arquitetura em camadas**, baseada em **API RESTful**, 
 
 ## 🗄️ Persistência de Dados
 
-### Oracle Database (Banco Relacional)
+### PostgreSQL (Banco Relacional)
 
 Utilizado como banco principal para dados transacionais e históricos:
 
@@ -80,7 +80,7 @@ Garante integridade, consistência e confiabilidade dos dados.
 
 ### Redis (Banco Não Relacional)
 
-Utilizado como **banco complementar**, com foco em **performance e insights**, não substituindo o Oracle.
+Utilizado como **banco complementar**, com foco em **performance e insights**, não substituindo o PostgreSQL.
 
 Principais usos:
 
@@ -130,7 +130,7 @@ Esses recursos permitem análise de comportamento e suporte à evolução do sis
 
 * **Backend:** Java
 * **Frontend:** React
-* **Banco de Dados Relacional:** Oracle Database
+* **Banco de Dados Relacional:** PostgreSQL
 * **Banco Não Relacional:** Redis
 * **Nuvem:** Microsoft Azure
 * **Arquitetura:** API RESTful
