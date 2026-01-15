@@ -15,12 +15,10 @@ public class UsuarioService {
     private UsuarioRepository usuarioRepository;
 
     public UsuarioModel criarUsuario(String nome, String email, String senha, String role) {
-        // 1. Verificar se o email já existe
         if (usuarioRepository.existsByEmail(email)) {
             throw new RuntimeException("Email já cadastrado");
         }
 
-        // 2. Criar novo usuário
         UsuarioModel novoUsuario = new UsuarioModel();
         novoUsuario.setNome(nome);
         novoUsuario.setEmail(email);
@@ -29,7 +27,6 @@ public class UsuarioService {
         novoUsuario.setStatus("ATIVO");
         novoUsuario.setDataCadastro(LocalDateTime.now());
 
-        //3. Salvar no banco
         return usuarioRepository.save(novoUsuario);
     }
 
