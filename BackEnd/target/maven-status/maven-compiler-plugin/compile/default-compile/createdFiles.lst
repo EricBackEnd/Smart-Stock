@@ -1,0 +1,5 @@
+com\smartstock\SmartStockApplication.class
+com\smartstock\controller\UsuarioController.class
+com\smartstock\service\UsuarioService.class
+com\smartstock\model\UsuarioModel.class
+com\smartstock\repository\UsuarioRepository.class
