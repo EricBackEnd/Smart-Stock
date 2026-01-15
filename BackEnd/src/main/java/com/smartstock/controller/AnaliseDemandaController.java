@@ -3,7 +3,6 @@ package com.smartstock.controller;
 import com.smartstock.model.AnaliseDemandaModel;
 import com.smartstock.service.AnaliseDemandaService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
